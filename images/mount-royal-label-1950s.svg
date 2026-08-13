@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Mount Royal Solutions crest label, mid-century style">
+  <defs>
+    <path id="bottomArc" d="M118 316 Q320 392 522 316" fill="none"/>
+  </defs>
+  <!-- ground oval -->
+  <ellipse cx="320" cy="220" rx="302" ry="202" fill="#7a1e2b"/>
+  <!-- gold double keylines -->
+  <ellipse cx="320" cy="220" rx="292" ry="192" fill="none" stroke="#c9a227" stroke-width="3"/>
+  <ellipse cx="320" cy="220" rx="280" ry="180" fill="none" stroke="#c9a227" stroke-width="1"/>
+  <!-- crown -->
+  <g fill="#c9a227">
+    <path d="M284 148 L292 112 L306 134 L320 104 L334 134 L348 112 L356 148 Z"/>
+    <circle cx="292" cy="108" r="4"/>
+    <circle cx="320" cy="99" r="4.5"/>
+    <circle cx="348" cy="108" r="4"/>
+  </g>
+  <rect x="282" y="150" width="76" height="10" rx="3" fill="#c9a227"/>
+  <g fill="#7a1e2b">
+    <circle cx="300" cy="155" r="2.4"/>
+    <circle cx="320" cy="155" r="2.4"/>
+    <circle cx="340" cy="155" r="2.4"/>
+  </g>
+  <!-- logotype -->
+  <text x="320" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="64" fill="#f2e8d5">Mount Royal</text>
+  <!-- swash rule -->
+  <path d="M150 268 Q320 290 490 268" fill="none" stroke="#c9a227" stroke-width="2"/>
+  <circle cx="142" cy="267" r="2.6" fill="#c9a227"/>
+  <circle cx="498" cy="267" r="2.6" fill="#c9a227"/>
+  <!-- solutions llc -->
+  <text x="320" y="304" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="21" letter-spacing="8" fill="#c9a227">SOLUTIONS LLC</text>
+  <!-- bottom arc -->
+  <text font-family="Georgia,'Times New Roman',serif" font-size="15.5" letter-spacing="4.5" fill="#f2e8d5">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">NORTHERN VIRGINIA &#183; U.S.A.</textPath>
+  </text>
+</svg>

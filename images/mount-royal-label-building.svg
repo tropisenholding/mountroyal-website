@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Mount Royal Solutions label with hotel building elevation">
+  <!-- ground -->
+  <rect x="0" y="0" width="640" height="400" rx="14" fill="#f2ecdc"/>
+  <!-- outer border -->
+  <rect x="10" y="10" width="620" height="380" rx="8" fill="none" stroke="#12294a" stroke-width="4"/>
+  <!-- inner keyline -->
+  <rect x="22" y="22" width="596" height="356" rx="4" fill="none" stroke="#12294a" stroke-width="1.2"/>
+  <!-- corner ticks -->
+  <g stroke="#8c2f39" stroke-width="2" fill="none">
+    <path d="M34 46 v-12 h12 M34 40 v-6 h6"/>
+    <path d="M606 46 v-12 h-12 M606 40 v-6 h-6"/>
+    <path d="M34 354 v12 h12 M34 360 v6 h6"/>
+    <path d="M606 354 v12 h-12 M606 360 v6 h-6"/>
+  </g>
+
+  <!-- MOUNT ROYAL -->
+  <text x="320" y="80" text-anchor="middle" font-family="'Futura','Century Gothic','URW Gothic','Avant Garde','Trebuchet MS',Arial,sans-serif" font-size="44" font-weight="700" letter-spacing="7" fill="#12294a">MOUNT ROYAL</text>
+
+  <!-- deco dash clouds -->
+  <g stroke="#8ba0ba" stroke-width="2.6" stroke-linecap="round">
+    <path d="M64 118 h34 M74 127 h44 M64 136 h30"/>
+    <path d="M542 112 h36 M528 121 h46 M548 130 h32"/>
+  </g>
+
+  <!-- flag -->
+  <g>
+    <path d="M320 142 v-32" stroke="#12294a" stroke-width="2.4"/>
+    <path d="M321 110 l24 5.5 -24 5.5 z" fill="#8c2f39"/>
+  </g>
+
+  <!-- penthouse setback (flush on roof) -->
+  <rect x="146" y="142" width="348" height="18" rx="5" fill="#12294a"/>
+  <rect x="158" y="148" width="324" height="4.5" rx="2.2" fill="#e6ddc6"/>
+
+  <!-- main block: long low streamlined body -->
+  <rect x="80" y="160" width="480" height="110" rx="10" fill="#12294a"/>
+  <!-- ribbon window bands -->
+  <g fill="#e6ddc6">
+    <rect x="92" y="170" width="456" height="6" rx="3"/>
+    <rect x="92" y="185" width="456" height="6" rx="3"/>
+    <rect x="92" y="200" width="456" height="6" rx="3"/>
+    <rect x="92" y="215" width="456" height="6" rx="3"/>
+    <rect x="92" y="230" width="456" height="6" rx="3"/>
+    <rect x="92" y="245" width="204" height="6" rx="3"/>
+    <rect x="344" y="245" width="204" height="6" rx="3"/>
+    <rect x="92" y="258" width="204" height="6" rx="3"/>
+    <rect x="344" y="258" width="204" height="6" rx="3"/>
+  </g>
+  <!-- entrance: doorway + marquee canopy -->
+  <rect x="306" y="242" width="28" height="28" fill="#e6ddc6"/>
+  <g stroke="#12294a" stroke-width="1.4">
+    <path d="M313 242 v28 M320 242 v28 M327 242 v28"/>
+  </g>
+  <rect x="294" y="235" width="52" height="7" rx="3" fill="#8c2f39"/>
+  <!-- pavement -->
+  <path d="M56 270 h528" stroke="#12294a" stroke-width="2.6"/>
+  <path d="M296 277 h48 M302 283 h36" stroke="#12294a" stroke-width="2"/>
+
+  <!-- SOLUTIONS LLC flanked -->
+  <g stroke="#8c2f39" stroke-width="1.6">
+    <path d="M110 322 h52"/>
+    <path d="M478 322 h52"/>
+  </g>
+  <circle cx="100" cy="322" r="2.6" fill="#8c2f39"/>
+  <circle cx="540" cy="322" r="2.6" fill="#8c2f39"/>
+  <text x="320" y="329" text-anchor="middle" font-family="'Futura','Century Gothic','URW Gothic','Avant Garde','Trebuchet MS',Arial,sans-serif" font-size="20" font-weight="600" letter-spacing="9" fill="#8c2f39">SOLUTIONS LLC</text>
+
+  <!-- location -->
+  <text x="320" y="362" text-anchor="middle" font-family="'Futura','Century Gothic','URW Gothic','Avant Garde','Trebuchet MS',Arial,sans-serif" font-size="15.5" font-weight="500" letter-spacing="6" fill="#41546e">NORTHERN VIRGINIA &#183; U.S.A.</text>
+</svg>

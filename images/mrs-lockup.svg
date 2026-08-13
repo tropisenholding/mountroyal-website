@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" role="img" aria-label="Mount Royal Solutions, LLC — Northern Virginia, U.S.A.">
+  <!-- abstract strata mark: negative-space peak -->
+  <g stroke="#12294a" stroke-width="4.6" stroke-linecap="round">
+    <path d="M228 24 h48 M284 24 h48"/>
+    <path d="M228 40 h42 M290 40 h42"/>
+    <path d="M228 56 h36 M296 56 h36"/>
+    <path d="M228 72 h30 M302 72 h30"/>
+    <path d="M228 88 h24 M308 88 h24"/>
+  </g>
+  <!-- wordmark -->
+  <text x="280" y="146" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="34" letter-spacing="5" fill="#12294a">MOUNT ROYAL SOLUTIONS</text>
+  <!-- hairline -->
+  <path d="M170 168 h220" stroke="#8ba0ba" stroke-width="1"/>
+  <!-- descriptor -->
+  <text x="280" y="196" text-anchor="middle" font-family="-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="12.5" letter-spacing="5" fill="#66707c">LLC &#183; NORTHERN VIRGINIA &#183; U.S.A.</text>
+</svg>

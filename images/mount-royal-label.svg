@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-label="Mount Royal Solutions label">
+  <defs>
+    <style>
+      .deco{font-family:'Futura','Century Gothic','URW Gothic','Avant Garde','Trebuchet MS',Arial,sans-serif;}
+    </style>
+  </defs>
+  <!-- ground -->
+  <rect x="0" y="0" width="640" height="320" rx="14" fill="#f2ecdc"/>
+  <!-- outer border -->
+  <rect x="10" y="10" width="620" height="300" rx="8" fill="none" stroke="#12294a" stroke-width="4"/>
+  <!-- inner keyline -->
+  <rect x="22" y="22" width="596" height="276" rx="4" fill="none" stroke="#12294a" stroke-width="1.2"/>
+  <!-- corner ticks (stepped deco) -->
+  <g stroke="#8c2f39" stroke-width="2" fill="none">
+    <path d="M34 46 v-12 h12 M34 40 v-6 h6"/>
+    <path d="M606 46 v-12 h-12 M606 40 v-6 h-6"/>
+    <path d="M34 274 v12 h12 M34 280 v6 h6"/>
+    <path d="M606 274 v12 h-12 M606 280 v6 h-6"/>
+  </g>
+  <!-- deco sunrise over stylised mount -->
+  <g>
+    <g stroke="#12294a" stroke-width="2" fill="none" opacity=".85">
+      <path d="M320 92 v-34"/>
+      <path d="M296 94 l-12 -30"/>
+      <path d="M344 94 l12 -30"/>
+      <path d="M276 102 l-24 -22"/>
+      <path d="M364 102 l24 -22"/>
+      <path d="M262 114 l-30 -12"/>
+      <path d="M378 114 l30 -12"/>
+    </g>
+    <!-- mount peaks -->
+    <g fill="none" stroke="#12294a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M258 128 L302 96 L326 114 L352 92 L396 128"/>
+    </g>
+    <g fill="none" stroke="#8c2f39" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M276 128 L308 105 L328 120 L350 101 L382 128"/>
+    </g>
+    <!-- base rules -->
+    <path d="M226 136 h188" stroke="#12294a" stroke-width="2"/>
+    <path d="M246 142 h148" stroke="#12294a" stroke-width="1"/>
+  </g>
+  <!-- MOUNT ROYAL -->
+  <text class="deco" x="320" y="196" text-anchor="middle" font-size="57" font-weight="700" letter-spacing="7" fill="#12294a">MOUNT ROYAL</text>
+  <!-- flanked SOLUTIONS LLC -->
+  <g stroke="#8c2f39" stroke-width="1.6">
+    <path d="M96 224 h56"/>
+    <path d="M488 224 h56"/>
+  </g>
+  <circle cx="86" cy="224" r="2.6" fill="#8c2f39"/>
+  <circle cx="554" cy="224" r="2.6" fill="#8c2f39"/>
+  <text class="deco" x="320" y="231" text-anchor="middle" font-size="21" font-weight="600" letter-spacing="9" fill="#8c2f39">SOLUTIONS LLC</text>
+  <!-- location line -->
+  <text class="deco" x="320" y="272" text-anchor="middle" font-size="16.5" font-weight="500" letter-spacing="6" fill="#41546e">NORTHERN VIRGINIA &#183; U.S.A.</text>
+</svg>
