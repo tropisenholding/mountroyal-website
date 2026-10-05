@@ -104,6 +104,17 @@
   .contact .details div{margin:8px 0}
   .contact .details b{font-family:var(--sans);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray);font-weight:600;display:block;margin-bottom:2px}
   .contact a{border-bottom:1px solid var(--hairline-dark)}
+  .cform{max-width:640px;margin:44px auto 0;text-align:left}
+  .cform .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cform label{display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray);font-weight:600;margin:18px 0 6px}
+  .cform input,.cform textarea{width:100%;box-sizing:border-box;background:#fffdf7;border:1px solid #cfc9b8;padding:12px 14px;font-family:var(--serif);font-size:1rem;color:var(--charcoal)}
+  .cform input:focus,.cform textarea:focus{outline:none;border-color:var(--steel)}
+  .cform textarea{min-height:140px;resize:vertical}
+  .cform button{margin-top:26px;background:var(--navy);color:#f6f3ea;border:none;padding:14px 38px;font-family:var(--sans);font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;cursor:pointer}
+  .cform button:hover{background:var(--navy-deep)}
+  .cform .fnote{font-family:var(--sans);font-size:.74rem;color:var(--gray);margin-top:16px;letter-spacing:.02em}
+  .csent{display:none;max-width:640px;margin:40px auto 0;padding:22px 26px;border:1px solid #cfc9b8;background:#fffdf7;color:var(--charcoal)}
+  @media (max-width:560px){.cform .frow{grid-template-columns:1fr}}
 
   footer{background:var(--navy-deep);color:#8ba0ba;padding:40px 24px;text-align:center;font-family:var(--sans);font-size:.78rem;letter-spacing:.06em}
   footer .fnav{margin-bottom:14px}
@@ -277,8 +288,30 @@
   <span class="smallcaps" style="display:block;margin-bottom:14px;color:var(--steel)">06 · Contact</span>
   <h2>Inquiries</h2>
   <p>The firm welcomes inquiries from program offices, contracting officers and teaming partners, including sources-sought and RFI responses.</p>
+  <div class="csent" id="csent">Thank you. Your inquiry has been received and will be answered promptly.</div>
+  <form class="cform" id="cform" action="https://formsubmit.co/tropisen@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Inquiry — mountroyalsolutions.com">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://www.mountroyalsolutions.com/?sent=1#contact">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <div class="frow">
+      <div>
+        <label for="cf-name">Name</label>
+        <input id="cf-name" type="text" name="name" required autocomplete="name">
+      </div>
+      <div>
+        <label for="cf-org">Organization</label>
+        <input id="cf-org" type="text" name="organization" autocomplete="organization">
+      </div>
+    </div>
+    <label for="cf-email">Email</label>
+    <input id="cf-email" type="email" name="email" required autocomplete="email">
+    <label for="cf-msg">Message</label>
+    <textarea id="cf-msg" name="message" required></textarea>
+    <div style="text-align:center"><button type="submit">Send Inquiry</button></div>
+  </form>
   <div class="details">
-    <div><b>Correspondence</b><a href="mailto:info@mountroyalsolutions.com">info@mountroyalsolutions.com</a></div>
     <div><b>Offices</b>Alexandria, Virginia, United States</div>
   </div>
 </section>
@@ -291,6 +324,12 @@
   <div class="legal">This website is provided for general informational purposes and does not constitute an offer of services where such an offer would be contrary to applicable regulation.</div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+if (new URLSearchParams(location.search).get('sent') === '1') {
+  document.getElementById('csent').style.display = 'block';
+  document.getElementById('cform').style.display = 'none';
+}
+</script>
 </body>
 </html>
