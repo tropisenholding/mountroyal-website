@@ -16,6 +16,7 @@
     --paper:#ffffff;
     --stone:#f6f3ea;
     --steel:#8ba0ba;
+    --label:#5d7290;
     --serif:Georgia,'Times New Roman',serif;
     --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   }
@@ -42,7 +43,7 @@
   .opening .container{max-width:860px;text-align:center}
   .opening h1{font-size:clamp(1.9rem,4.2vw,2.9rem);line-height:1.3;margin-bottom:30px}
   .opening p{font-size:1.08rem;color:var(--gray);max-width:700px;margin:0 auto 12px}
-  .opening .smallcaps{display:block;margin-bottom:26px;color:var(--steel)}
+  .opening .smallcaps{display:block;margin-bottom:26px;color:var(--label)}
   .textlink{font-family:var(--sans);font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--navy);padding-bottom:3px;display:inline-block;margin-top:30px}
   .textlink:hover{color:var(--gray);border-color:var(--gray)}
 
@@ -54,7 +55,7 @@
   /* ---------- Sections ---------- */
   section.block{padding:96px 0;border-bottom:1px solid var(--hairline)}
   .sec-head{text-align:center;margin-bottom:56px}
-  .sec-head .smallcaps{display:block;margin-bottom:14px;color:var(--steel)}
+  .sec-head .smallcaps{display:block;margin-bottom:14px;color:var(--label)}
   .sec-head h2{font-size:clamp(1.6rem,3.2vw,2.2rem)}
   .sec-rule{width:52px;margin:22px auto 0;border-top:1px solid var(--hairline-dark);opacity:.35}
 
@@ -110,6 +111,21 @@
   .comply p{font-size:.95rem;color:var(--gray)}
   @media(max-width:760px){.comply{grid-template-columns:1fr}}
 
+  /* ---------- Federal contracting ---------- */
+  .fed{max-width:860px;margin:64px auto 0;background:var(--stone);border-top:3px solid var(--navy);padding:34px 36px 30px}
+  .fed h3{font-size:1.3rem;margin-bottom:6px}
+  .fed .lead{font-size:.95rem;color:var(--gray);margin-bottom:22px}
+  .ids{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 28px;margin-bottom:24px}
+  .ids div{border-top:1px solid #d6d0c0;padding-top:10px}
+  .ids b{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gray);font-weight:600;margin-bottom:3px}
+  .ids span{font-family:var(--sans);font-size:.98rem;color:var(--navy)}
+  @media(max-width:640px){.ids{grid-template-columns:1fr 1fr}.fed{padding:28px 22px 24px}}
+  .fed details{border-top:1px solid #d6d0c0;padding-top:14px}
+  .fed summary{cursor:pointer;font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);font-weight:600}
+  .fed summary:focus-visible{outline:2px solid var(--navy);outline-offset:4px}
+  .fed details[open] summary{margin-bottom:22px}
+  .fed table.codes{background:transparent}
+
   /* ---------- Clients ---------- */
   .clients{max-width:780px;margin:0 auto;text-align:center}
   .clients p{font-size:1.04rem;color:var(--charcoal);margin-bottom:16px}
@@ -146,6 +162,7 @@
   .cform{max-width:640px;margin:44px auto 0;text-align:left}
   .cform .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .cform label{display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray);font-weight:600;margin:18px 0 6px}
+  .cform select{width:100%;box-sizing:border-box;background:#fffdf7;border:1px solid #cfc9b8;padding:12px 14px;font-family:var(--serif);font-size:1rem;color:var(--charcoal)}
   .cform input,.cform textarea{width:100%;box-sizing:border-box;background:#fffdf7;border:1px solid #cfc9b8;padding:12px 14px;font-family:var(--serif);font-size:1rem;color:var(--charcoal)}
   .cform input:focus,.cform textarea:focus{outline:none;border-color:var(--steel)}
   .cform textarea{min-height:140px;resize:vertical}
@@ -159,7 +176,7 @@
   footer .fnav{margin-bottom:14px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 0}
   footer .fnav a{color:#c9d4e2;margin:0 14px;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase}
   footer .fnav a:hover{color:#ffffff}
-  footer .legal{color:#5f7392;font-size:.72rem;margin-top:10px}
+  footer .legal{color:#8ba0ba;font-size:.72rem;margin-top:10px}
 </style>
 </head>
 <body>
@@ -173,8 +190,8 @@
       <li><a href="#practice">Practice Areas</a></li>
       <li><a href="#reach">Reach</a></li>
       <li><a href="#people">Leadership</a></li>
-      <li><a href="#compliance">Compliance</a></li>
-      <li><a href="#contract">Contract Information</a></li>
+      <li><a href="#compliance">Compliance &amp; Contracting</a></li>
+      <li><a href="#clients">Clients</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -204,8 +221,8 @@
     <div class="firm-cols">
       <p>Mount Royal Solutions, LLC is a Virginia limited liability company headquartered in Alexandria, Virginia. The firm operates across five core disciplines — advisory services, project and program management, strategy consulting, procurement and acquisition support, and international logistics. Africa is the firm's primary operational focus, with its personnel, resources and field expertise concentrated on the continent, particularly in West Africa. This foundation is complemented by country-specific knowledge and sector expertise in Eastern Europe and in Southeast Asia, extending the firm's geographic reach and cross-border capabilities.</p>
       <p>Successful operations in Africa require more than sound strategy; they demand first-hand knowledge, established relationships and an understanding of local realities. Ports, customs regimes, government institutions and commercial markets operate according to distinct practices and precedents. Since 2010, the firm's leadership has managed agribusiness, mining, trading and logistics operations across West Africa, developing the practical experience, regional networks and operational judgment necessary to navigate challenging environments and deliver results.</p>
-      <p>The firm operates in English, French, Portuguese, Spanish and Russian, supporting engagements across Anglophone, Francophone and Lusophone Africa, as well as international assignments involving Eastern Europe and Southeast Asia. Mount Royal Solutions combines regional and sector-specific knowledge with U.S. management, reporting and compliance expectations, documenting its work to the standards required by government program offices and contracting officers while bridging the gap between strategic objectives and execution on the ground.</p>
-      <p>Mount Royal Solutions pursues prime contracts suited to a specialized, agile firm and partners with established prime contractors requiring dependable regional execution. Its Africa-focused team provides local vendor and stakeholder coordination, multilingual engagement, procurement and logistics support, and senior-level program management without requiring clients to maintain permanent in-country infrastructure. The firm's complementary knowledge of Eastern European and Southeast Asian markets further supports international sourcing, cross-border coordination and engagements spanning multiple regions.</p>
+      <p>The firm operates in English, French, Portuguese, Spanish and Russian, supporting engagements across Anglophone, Francophone and Lusophone Africa and beyond. Mount Royal Solutions combines regional and sector-specific knowledge with U.S. management, reporting and compliance expectations, documenting its work to the standards required by government program offices and contracting officers while bridging the gap between strategic objectives and execution on the ground.</p>
+      <p>Mount Royal Solutions pursues prime contracts suited to a specialized, agile firm and partners with established prime contractors requiring dependable regional execution. Its Africa-focused team provides local vendor and stakeholder coordination, multilingual engagement, procurement and logistics support, and senior-level program management without requiring clients to maintain permanent in-country infrastructure.</p>
     </div>
   </div>
 </section>
@@ -222,35 +239,35 @@
         <div class="pnum">I<small>Advisory</small></div>
         <div>
           <h3>Advisory Services</h3>
-          <p>Country and market assessments, stakeholder and institutional analysis, operating-environment and risk reviews, commercial and program feasibility studies, and strategic engagement support. With Africa as its primary focus, the firm combines first-hand regional operating experience with country-specific and sector knowledge in Eastern Europe and Southeast Asia, providing practical, actionable advice grounded in an understanding of local institutions, commercial realities and operational constraints.</p>
+          <p>Country and market assessments, stakeholder and institutional analysis, operating-environment and risk reviews, commercial and program feasibility studies, and strategic engagement support. Advice is practical and actionable, grounded in first-hand operating experience and an understanding of local institutions, commercial realities and operational constraints.</p>
         </div>
       </li>
       <li>
         <div class="pnum">II<small>Programs</small></div>
         <div>
           <h3>Project &amp; Program Management</h3>
-          <p>End-to-end project and program management, from planning and mobilization through implementation and delivery. Services include work-plan development, scheduling, budget and milestone tracking, implementation oversight, quality assurance, field coordination, vendor and subcontractor management, and performance reporting aligned with U.S. Government and prime contractor requirements. The firm's Africa-focused operational expertise enables effective management of complex assignments in challenging environments, bridging program objectives with execution on the ground.</p>
+          <p>End-to-end project and program management, from planning and mobilization through implementation and delivery. Services include work-plan development, scheduling, budget and milestone tracking, implementation oversight, quality assurance, field coordination, vendor and subcontractor management, and performance reporting aligned with U.S. Government and prime contractor requirements. The firm's field operating experience enables effective management of complex assignments in challenging environments, bridging program objectives with execution on the ground.</p>
         </div>
       </li>
       <li>
         <div class="pnum">III<small>Strategy</small></div>
         <div>
           <h3>Strategy Consulting</h3>
-          <p>Program strategy, market-entry planning, operating-model development, business development and capture support, organizational assessments, stakeholder engagement frameworks and strategic decision support. Drawing on extensive operational experience in Africa and complementary market and sector knowledge in Eastern Europe and Southeast Asia, the firm develops practical, evidence-based strategies that account for institutional realities, commercial opportunities, operational risks and implementation requirements.</p>
+          <p>Program strategy, market-entry planning, operating-model development, business development and capture support, organizational assessments, stakeholder engagement frameworks and strategic decision support. Drawing on direct operating experience, the firm develops practical, evidence-based strategies that account for institutional realities, commercial opportunities, operational risks and implementation requirements.</p>
         </div>
       </li>
       <li>
         <div class="pnum">IV<small>Procurement</small></div>
         <div>
           <h3>Procurement &amp; Acquisition Support</h3>
-          <p>Market research, supplier identification and qualification, international sourcing, solicitation and evaluation support, vendor coordination, purchase-order administration, procurement tracking and contract-administration support. With a primary focus on programs operating in Africa, the firm draws on regional expertise and knowledge of supply markets in Eastern Europe and Southeast Asia to support cross-border procurement and supplier engagement. Services emphasize transparency, accountability, documentation and alignment with applicable U.S. Government, prime contractor and institutional requirements. All services are provided as contractor support and do not involve the exercise of inherently governmental authority.</p>
+          <p>Market research, supplier identification and qualification, international sourcing, solicitation and evaluation support, vendor coordination, purchase-order administration, procurement tracking and contract-administration support. Knowledge of supply markets in Eastern Europe and Southeast Asia supports cross-border procurement and supplier engagement. Services emphasize transparency, accountability, documentation and alignment with applicable U.S. Government, prime contractor and institutional requirements. All services are provided as contractor support and do not involve the exercise of inherently governmental authority.</p>
         </div>
       </li>
       <li>
         <div class="pnum">V<small>Logistics</small></div>
         <div>
           <h3>International Logistics</h3>
-          <p>International freight and transportation coordination, customs and port operations support, warehousing, shipment tracking, chain-of-custody documentation, distribution planning and final-mile delivery. The firm specializes in navigating the logistical and operational complexities of African markets, supporting the movement of equipment, vehicles, supplies and materiel through challenging supply chains. Complementary knowledge of Eastern European and Southeast Asian markets supports international sourcing and shipment coordination, connecting global supply networks with reliable execution on the ground.</p>
+          <p>International freight and transportation coordination, customs and port operations support, warehousing, shipment tracking, chain-of-custody documentation, distribution planning and final-mile delivery. The firm specializes in navigating the logistical and operational complexities of African markets, supporting the movement of equipment, vehicles, supplies and materiel through challenging supply chains. International sourcing and shipment coordination connect global supply networks with reliable execution on the ground.</p>
         </div>
       </li>
     </ul>
@@ -265,7 +282,7 @@
       <div class="sec-rule"></div>
     </div>
     <div class="diff">
-      <div><h3>Field Experience, Not Remote Advice</h3><p>Our leadership brings first-hand business and operational experience across Senegal, Mali, Guinea-Bissau, Guinea, The Gambia, Mauritania and Cabo Verde. With Africa at the center of our operations, we understand the institutions, markets, supply chains and local realities that determine success on the ground. Complementary country and sector expertise in Eastern Europe and Southeast Asia extends our international capabilities.</p></div>
+      <div><h3>Field Experience, Not Remote Advice</h3><p>Our leadership brings first-hand business and operational experience across Senegal, Mali, Guinea-Bissau, Guinea, The Gambia, Mauritania and Cabo Verde. With Africa at the center of our operations, we understand the institutions, markets, supply chains and local realities that determine success on the ground.</p></div>
       <div><h3>Principal-Led Delivery</h3><p>Direct senior-level involvement, responsive decision-making and clear accountability throughout every engagement. Clients work with experienced professionals empowered to make decisions, resolve challenges and take responsibility for results.</p></div>
       <div><h3>Multilingual by Default</h3><p>Operational capability in English, French, Portuguese, Spanish and Russian enables direct engagement with government institutions, commercial partners, suppliers and local communities, reducing communication barriers and dependence on intermediaries.</p></div>
       <div><h3>From Strategy to Execution</h3><p>An integrated approach connecting assessment, strategy, planning, procurement, logistics and field implementation. We bridge the gap between recommendations and results, maintaining continuity and accountability from initial engagement through delivery.</p></div>
@@ -308,65 +325,10 @@
   </div>
 </section>
 
-<section class="block" id="clients">
-  <div class="container">
-    <div class="sec-head">
-      <span class="smallcaps">05 · Clients Served</span>
-      <h2>Who We Serve</h2>
-      <div class="sec-rule"></div>
-    </div>
-    <div class="clients">
-      <p>We work with U.S. Government agencies and program offices, the prime contractors and teams that support them, and the organizations delivering programs in the field.</p>
-      <div class="client-list">
-        <span>Federal Civilian Agencies</span>
-        <span>Defense &amp; National Security Organizations</span>
-        <span>Prime Contractors</span>
-        <span>Development Implementers</span>
-        <span>NGOs &amp; Implementing Partners</span>
-        <span>U.S. Companies Operating Abroad</span>
-      </div>
-      <div class="cta">
-        <a class="btn solid" href="#contact" data-msg="Please send us the Mount Royal Solutions capability statement.">Request Capability Statement</a>
-        <a class="btn" href="#contact" data-msg="We would like to discuss a potential engagement or teaming opportunity.">Discuss an Engagement</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="contract">
-  <div class="container">
-    <div class="sec-head">
-      <span class="smallcaps">06 · Contract Information</span>
-      <h2>Classifications</h2>
-      <div class="sec-rule"></div>
-    </div>
-    <table class="codes">
-      <tr><th>NAICS Code</th><th>Classification</th><th>Designation</th></tr>
-      <tr><td>541611</td><td>Administrative Management &amp; General Management Consulting Services</td><td>Primary</td></tr>
-      <tr><td>541614</td><td>Process, Physical Distribution &amp; Logistics Consulting Services</td><td>Secondary</td></tr>
-      <tr><td>541618</td><td>Other Management Consulting Services</td><td>Secondary</td></tr>
-      <tr><td>541990</td><td>All Other Professional, Scientific &amp; Technical Services</td><td>Secondary</td></tr>
-      <tr><td>488510</td><td>Freight Transportation Arrangement</td><td>Secondary</td></tr>
-      <tr><td>488190</td><td>Other Support Activities for Air Transportation</td><td>Secondary</td></tr>
-      <tr><td>488390</td><td>Other Support Activities for Water Transportation</td><td>Secondary</td></tr>
-      <tr><td>561210</td><td>Facilities Support Services</td><td>Secondary</td></tr>
-      <tr><td>561990</td><td>All Other Support Services</td><td>Secondary</td></tr>
-    </table>
-    <table class="codes" style="margin-top:46px">
-      <tr><th>PSC Code</th><th>Product Service Category</th><th>Designation</th></tr>
-      <tr><td>R408</td><td>Support — Professional: Program Management / Support</td><td>Primary</td></tr>
-      <tr><td>R707</td><td>Support — Management: Contract / Procurement / Acquisition Support</td><td>Secondary</td></tr>
-      <tr><td>R706</td><td>Support — Management: Logistics Support</td><td>Secondary</td></tr>
-      <tr><td>R410</td><td>Support — Professional: Program Evaluation / Review / Development</td><td>Secondary</td></tr>
-    </table>
-    <p class="codes-note">UEI N64ACVF3KDW3 · CAGE 26DW3 · Active registration in SAM.gov · Small business. The firm's capability statement is furnished to program offices, contracting officers and teaming partners on request.</p>
-  </div>
-</section>
-
 <section class="block" id="people">
   <div class="container">
     <div class="sec-head">
-      <span class="smallcaps">07 · Leadership</span>
+      <span class="smallcaps">05 · Leadership</span>
       <h2>Principal-Led Delivery</h2>
       <div class="sec-rule"></div>
     </div>
@@ -391,23 +353,82 @@
 <section class="block" id="compliance">
   <div class="container">
     <div class="sec-head">
-      <span class="smallcaps">08 · Compliance &amp; Integrity</span>
+      <span class="smallcaps">06 · Compliance &amp; Federal Contracting</span>
       <h2>Standards We Hold</h2>
       <div class="sec-rule"></div>
     </div>
     <ul class="comply">
-      <li><h3>Anti-Bribery &amp; Anti-Corruption</h3><p>Zero tolerance for bribery and no facilitation payments; full compliance with the U.S. Foreign Corrupt Practices Act and host-country law.</p></li>
-      <li><h3>Anti-Money Laundering &amp; KYC</h3><p>Know-your-customer and know-your-supplier checks, including beneficial ownership; payments only through regulated banks to verified accounts.</p></li>
-      <li><h3>Sanctions &amp; Export Controls</h3><p>Every client, supplier, subcontractor and payee screened against OFAC and other U.S. restricted-party lists, with UN and EU lists where relevant.</p></li>
-      <li><h3>Federal Procurement Integrity</h3><p>Adherence to the Procurement Integrity Act, the Anti-Kickback Act and FAR contingent-fee rules; conflicts of interest identified and disclosed.</p></li>
-      <li><h3>Records, Audit &amp; Chain of Custody</h3><p>Complete documentation of every purchase, payment and delivery; audit-ready books and no off-book arrangements.</p></li>
-      <li><h3>Safeguarding &amp; Flow-Down</h3><p>Federal contract information protected under FAR 52.204-21 basic controls; obligations flowed down to every subcontractor and supplier.</p></li>
+      <li><h3>Anti-Bribery &amp; Anti-Corruption</h3><p>Bribery and facilitation payments are prohibited; work is conducted in accordance with the U.S. Foreign Corrupt Practices Act and applicable host-country law.</p></li>
+      <li><h3>Anti-Money Laundering &amp; KYC</h3><p>Know-your-customer and know-your-supplier due diligence, including beneficial ownership where relevant; payments made through regulated banking channels to verified accounts.</p></li>
+      <li><h3>Sanctions &amp; Export Controls</h3><p>Clients, suppliers, subcontractors and payees are screened against OFAC and other U.S. restricted-party lists, and against UN and EU lists where relevant.</p></li>
+      <li><h3>Federal Procurement Integrity</h3><p>Adherence to the Procurement Integrity Act, the Anti-Kickback Act and FAR contingent-fee rules; organizational conflicts of interest are identified and disclosed.</p></li>
+      <li><h3>Records, Audit &amp; Chain of Custody</h3><p>Purchases, payments and deliveries are documented and records kept audit-ready, with no off-book arrangements.</p></li>
+      <li><h3>Safeguarding &amp; Flow-Down</h3><p>Federal contract information safeguarded in line with FAR 52.204-21 basic controls; compliance obligations flowed down to subcontractors and suppliers.</p></li>
     </ul>
+    <div class="fed" id="contract">
+      <h3>Federal Contracting Information</h3>
+      <p class="lead">Active SAM.gov registration. The capability statement is furnished to program offices, contracting officers and teaming partners on request.</p>
+      <div class="ids">
+        <div><b>UEI</b><span>N64ACVF3KDW3</span></div>
+        <div><b>CAGE</b><span>26DW3</span></div>
+        <div><b>SAM.gov</b><span>Active</span></div>
+        <div><b>Business size</b><span>Small business</span></div>
+        <div><b>Primary NAICS</b><span>541611</span></div>
+        <div><b>Primary PSC</b><span>R408</span></div>
+      </div>
+      <details>
+        <summary>Full NAICS and PSC classifications</summary>
+    <table class="codes">
+      <tr><th>NAICS Code</th><th>Classification</th><th>Designation</th></tr>
+      <tr><td>541611</td><td>Administrative Management &amp; General Management Consulting Services</td><td>Primary</td></tr>
+      <tr><td>541614</td><td>Process, Physical Distribution &amp; Logistics Consulting Services</td><td>Secondary</td></tr>
+      <tr><td>541618</td><td>Other Management Consulting Services</td><td>Secondary</td></tr>
+      <tr><td>541990</td><td>All Other Professional, Scientific &amp; Technical Services</td><td>Secondary</td></tr>
+      <tr><td>488510</td><td>Freight Transportation Arrangement</td><td>Secondary</td></tr>
+      <tr><td>488190</td><td>Other Support Activities for Air Transportation</td><td>Secondary</td></tr>
+      <tr><td>488390</td><td>Other Support Activities for Water Transportation</td><td>Secondary</td></tr>
+      <tr><td>561210</td><td>Facilities Support Services</td><td>Secondary</td></tr>
+      <tr><td>561990</td><td>All Other Support Services</td><td>Secondary</td></tr>
+    </table>
+    <table class="codes" style="margin-top:34px">
+      <tr><th>PSC Code</th><th>Product Service Category</th><th>Designation</th></tr>
+      <tr><td>R408</td><td>Support — Professional: Program Management / Support</td><td>Primary</td></tr>
+      <tr><td>R707</td><td>Support — Management: Contract / Procurement / Acquisition Support</td><td>Secondary</td></tr>
+      <tr><td>R706</td><td>Support — Management: Logistics Support</td><td>Secondary</td></tr>
+      <tr><td>R410</td><td>Support — Professional: Program Evaluation / Review / Development</td><td>Secondary</td></tr>
+    </table>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="clients">
+  <div class="container">
+    <div class="sec-head">
+      <span class="smallcaps">07 · Clients Served</span>
+      <h2>Who We Serve</h2>
+      <div class="sec-rule"></div>
+    </div>
+    <div class="clients">
+      <p>We work with U.S. Government agencies and program offices, the prime contractors and teams that support them, and the organizations delivering programs in the field.</p>
+      <div class="client-list">
+        <span>Federal Civilian Agencies</span>
+        <span>Defense &amp; National Security Organizations</span>
+        <span>Prime Contractors</span>
+        <span>Development Implementers</span>
+        <span>NGOs &amp; Implementing Partners</span>
+        <span>U.S. Companies Operating Abroad</span>
+      </div>
+      <div class="cta">
+        <a class="btn solid" href="#contact" data-type="Capability statement request" data-msg="Please send us the Mount Royal Solutions capability statement.">Request Capability Statement</a>
+        <a class="btn" href="#contact" data-type="Engagement or teaming discussion" data-msg="">Discuss an Engagement</a>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
-  <span class="smallcaps" style="display:block;margin-bottom:14px;color:var(--steel)">09 · Contact</span>
+  <span class="smallcaps" style="display:block;margin-bottom:14px;color:var(--label)">08 · Contact</span>
   <h2>Inquiries</h2>
   <p>The firm welcomes inquiries from program offices, contracting officers and teaming partners, including sources-sought and RFI responses.</p>
   <div class="csent" id="csent">Thank you. Your inquiry has been received and will be answered promptly.</div>
@@ -429,7 +450,22 @@
     </div>
     <label for="cf-email">Email</label>
     <input id="cf-email" type="email" name="email" required autocomplete="email">
-    <label for="cf-msg">Message</label>
+    <div class="frow">
+      <div>
+        <label for="cf-type">Inquiry</label>
+        <select id="cf-type" name="inquiry_type">
+          <option value="Engagement or teaming discussion">Engagement or teaming discussion</option>
+          <option value="Capability statement request">Capability statement request</option>
+          <option value="Sources sought / RFI">Sources sought / RFI</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="cf-region">Country or region</label>
+        <input id="cf-region" type="text" name="country_or_region" placeholder="e.g. Senegal, West Africa">
+      </div>
+    </div>
+    <label for="cf-msg">Nature of the requirement</label>
     <textarea id="cf-msg" name="message" required></textarea>
     <div style="text-align:center"><button type="submit">Send Inquiry</button></div>
   </form>
@@ -441,7 +477,7 @@
 
 <footer>
   <div class="fnav">
-    <a href="#firm">The Firm</a><a href="#practice">Practice Areas</a><a href="#reach">Reach</a><a href="#compliance">Compliance</a><a href="#contact">Contact</a>
+    <a href="#firm">The Firm</a><a href="#practice">Practice Areas</a><a href="#reach">Reach</a><a href="#compliance">Compliance &amp; Contracting</a><a href="#contact">Contact</a>
   </div>
   <div>© <span id="year"></span> Mount Royal Solutions, LLC. All rights reserved.</div>
   <div class="legal">This website is provided for general informational purposes and does not constitute an offer of services where such an offer would be contrary to applicable regulation.</div>
@@ -449,7 +485,7 @@
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-document.querySelectorAll('.cta a[data-msg]').forEach(function(a){a.addEventListener('click',function(){var t=document.getElementById('cf-msg');if(t&&!t.value){t.value=a.getAttribute('data-msg');}});});
+document.querySelectorAll('.cta a[data-type]').forEach(function(a){a.addEventListener('click',function(){var s=document.getElementById('cf-type');if(s){s.value=a.getAttribute('data-type');}var t=document.getElementById('cf-msg');var m=a.getAttribute('data-msg');if(t&&m&&!t.value){t.value=m;}});});
 if (new URLSearchParams(location.search).get('sent') === '1') {
   document.getElementById('csent').style.display = 'block';
   document.getElementById('cform').style.display = 'none';
